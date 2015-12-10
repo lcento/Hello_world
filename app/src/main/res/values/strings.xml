@@ -39,4 +39,11 @@
     <string name="planet_military_label">Planet Military: </string>
     <string name="planet_bases_label">Planet Bases: </string>
     <string name="planet_forcefield_label">Planet Forcefield: </string>
+
+    <string name="attack_planet_caption">Select Attack Type Using Icon</string>
+    <string name="attack_planet_bomb">Bomb a Planet</string>
+    <string name="attack_planet_invade">Invade a Planet</string>
+    <string name="attack_planet_infect">Infect a Planet</string>
+    <string name="attack_planet_laser">Shoot a Laser</string>
+    <string name="attack_planet_exit">Exit Attack Mode</string>
 </resources>

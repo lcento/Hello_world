@@ -9,7 +9,7 @@ import android.widget.Toast;
 import android.widget.VideoView;
 
 /**
- * Created by leo on 03/12/15.
+ * Created by ${USER} on ${DATE}.
  */
 public class TravelPlanet extends Activity {
     @Override

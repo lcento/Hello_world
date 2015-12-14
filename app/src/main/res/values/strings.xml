@@ -1,5 +1,10 @@
 <resources>
-    <string name="app_name">Hello_world</string>
+    <string name="app_name">Hello_world - Home Screen</string>
+    <string name="activity_title_new_planet">Hello_world - Create a Planet</string>
+    <string name="activity_title_config_planet">Hello_world - Configure a Planet</string>
+    <string name="activity_title_travel_planet">Hello_world - Travel to Planet</string>
+    <string name="activity_title_attack_planet">Hello_world - Travel a Planet</string>
+
     <string name="hello_world">Hello world!!</string>
     <string name="menu_add_planet">Add a New Planet</string>
     <string name="menu_config_planet">Configure Planet</string>

@@ -22,6 +22,8 @@ public class ConfigPlanet extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        getSupportActionBar().setIcon(R.drawable.helloworldicon);
+
         EditText colonyText = (EditText)findViewById(R.id.editTextColonies);
         colonyText.setText("1", EditText.BufferType.EDITABLE);
         EditText colonistText = (EditText)findViewById(R.id.editTextColonists);

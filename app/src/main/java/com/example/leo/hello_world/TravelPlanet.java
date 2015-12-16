@@ -22,6 +22,8 @@ public class TravelPlanet extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        getSupportActionBar().setIcon(R.drawable.helloworldicon);
+
         VideoView travelVideo = (VideoView)findViewById(R.id.travelVideoView);
         travelVideo.setOnTouchListener(new View.OnTouchListener() {
             @Override

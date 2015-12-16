@@ -24,6 +24,8 @@ public class NewPlanet extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        getSupportActionBar().setIcon(R.drawable.helloworldicon);
+
         Button doneButton = (Button)findViewById(R.id.doneAddingButton);
         doneButton.setOnClickListener(new View.OnClickListener() {
             @Override

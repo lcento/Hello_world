@@ -21,6 +21,8 @@ public class AttackPlanet extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        getSupportActionBar().setIcon(R.drawable.helloworldicon);
+
         ImageButton bombButton = (ImageButton)findViewById(R.id.bombButton);
         bombButton.setOnClickListener(new View.OnClickListener() {
             @Override

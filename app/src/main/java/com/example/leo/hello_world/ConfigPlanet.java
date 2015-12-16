@@ -2,6 +2,8 @@ package com.example.leo.hello_world;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
@@ -11,11 +13,15 @@ import android.widget.TextView;
 /**
  * Created by leo on 03/12/15.
  */
-public class ConfigPlanet extends Activity {
+public class ConfigPlanet extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_config);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
         EditText colonyText = (EditText)findViewById(R.id.editTextColonies);
         colonyText.setText("1", EditText.BufferType.EDITABLE);
         EditText colonistText = (EditText)findViewById(R.id.editTextColonists);

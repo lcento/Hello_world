@@ -2,6 +2,8 @@ package com.example.leo.hello_world;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -12,12 +14,16 @@ import android.widget.Toast;
 /**
  * Created by leo on 02/12/15.
  */
-public class NewPlanet extends Activity {
+public class NewPlanet extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
         Button doneButton = (Button)findViewById(R.id.doneAddingButton);
         doneButton.setOnClickListener(new View.OnClickListener() {
             @Override

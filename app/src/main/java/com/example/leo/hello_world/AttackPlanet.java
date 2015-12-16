@@ -2,6 +2,8 @@ package com.example.leo.hello_world;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageButton;
@@ -10,11 +12,15 @@ import android.widget.Toast;
 /**
  * Created by leo on 04/12/15.
  */
-public class AttackPlanet extends Activity {
+public class AttackPlanet extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_attack);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
         ImageButton bombButton = (ImageButton)findViewById(R.id.bombButton);
         bombButton.setOnClickListener(new View.OnClickListener() {
             @Override

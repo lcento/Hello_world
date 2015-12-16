@@ -2,6 +2,8 @@ package com.example.leo.hello_world;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
@@ -11,11 +13,14 @@ import android.widget.VideoView;
 /**
  * Created by ${USER} on ${DATE}.
  */
-public class TravelPlanet extends Activity {
+public class TravelPlanet extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_travel);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         VideoView travelVideo = (VideoView)findViewById(R.id.travelVideoView);
         travelVideo.setOnTouchListener(new View.OnTouchListener() {

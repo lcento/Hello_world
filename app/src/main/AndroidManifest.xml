@@ -6,10 +6,11 @@
         android:allowBackup="true"
         android:icon="@drawable/helloworldicon"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme.NoActionBar">
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,16 +19,20 @@
         </activity>
         <activity
             android:name="NewPlanet"
-            android:label="@string/activity_title_new_planet"/>
+            android:label="@string/activity_title_new_planet"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name="ConfigPlanet"
-            android:label="@string/activity_title_config_planet"/>
+            android:label="@string/activity_title_config_planet"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name="TravelPlanet"
-            android:label="@string/activity_title_travel_planet"/>
+            android:label="@string/activity_title_travel_planet"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name="AttackPlanet"
-            android:label="@string/activity_title_attack_planet"/>
+            android:label="@string/activity_title_attack_planet"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

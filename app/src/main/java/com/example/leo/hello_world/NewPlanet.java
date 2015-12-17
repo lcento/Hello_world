@@ -1,14 +1,14 @@
 package com.example.leo.hello_world;
 
-import android.app.Activity;
+import android.graphics.drawable.TransitionDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 /**
@@ -26,6 +26,10 @@ public class NewPlanet extends AppCompatActivity {
 
         getSupportActionBar().setIcon(R.drawable.helloworldicon);
 
+        final TransitionDrawable trans = (TransitionDrawable)getResources().getDrawable(R.drawable.tran_stars_galaxy);
+        RelativeLayout newPlanetScreen = (RelativeLayout)findViewById(R.id.new_planet_screen);
+        newPlanetScreen.setBackground(trans);
+
         Button doneButton = (Button)findViewById(R.id.doneAddingButton);
         doneButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,13 +37,15 @@ public class NewPlanet extends AppCompatActivity {
                 finish();
             }
         });
+
         ImageView marsImage = (ImageView)findViewById(R.id.imageMars);
-        marsImage.setOnClickListener(new OnClickListener() {
+        marsImage.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 WorldGen mars = new WorldGen("Mars", 642, 3.7);
                 mars.setPlanetColonies(1);
                 Toast.makeText(NewPlanet.this, "Mars Created", Toast.LENGTH_SHORT).show();
+                trans.startTransition(5000);
             }
         });
     }

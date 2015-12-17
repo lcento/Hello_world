@@ -1,12 +1,16 @@
 package com.example.leo.hello_world;
 
 import android.app.Activity;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 /**
@@ -24,13 +28,20 @@ public class AttackPlanet extends AppCompatActivity {
         getSupportActionBar().setIcon(R.drawable.helloworldicon);
 
         ImageButton bombButton = (ImageButton)findViewById(R.id.bombButton);
+        Animation rotateBomb = AnimationUtils.loadAnimation(this, R.anim.anim_rot_bomb);
+        bombButton.startAnimation(rotateBomb);
         bombButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(AttackPlanet.this, "Bombs Away!", Toast.LENGTH_SHORT).show();
             }
         });
+        ImageView invadeEffect = (ImageView)findViewById(R.id.invadeEffect);
+        AnimationDrawable transporterEffect = (AnimationDrawable) invadeEffect.getBackground();
+        transporterEffect.start();
         ImageButton invadeButton = (ImageButton)findViewById(R.id.invadeButton);
+        Animation alphaInvade = AnimationUtils.loadAnimation(this, R.anim.anim_alpha_invade);
+        invadeButton.startAnimation(alphaInvade);
         invadeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,6 +49,8 @@ public class AttackPlanet extends AppCompatActivity {
             }
         });
         ImageButton infectButton = (ImageButton)findViewById(R.id.infectButton);
+        Animation scaleVirus = AnimationUtils.loadAnimation(this,R.anim.anim_scale_virus);
+        infectButton.startAnimation(scaleVirus);
         infectButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

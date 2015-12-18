@@ -10,6 +10,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -40,9 +42,13 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     private void setStartUpScreenAnim() {
-        ImageView homePlanet = (ImageView)findViewById(R.id.imageEarth);
-        AnimationDrawable forceFieldAnimation = (AnimationDrawable)homePlanet.getBackground();
-        forceFieldAnimation.start();
+        //ImageView homePlanet = (ImageView)findViewById(R.id.imageEarth);
+        //homePlanet.setBackgroundResource(R.drawable.anim_forcefield);
+        //AnimationDrawable forceFieldAnimation = (AnimationDrawable)homePlanet.getBackground();
+        //forceFieldAnimation.start();
+        ImageView effectPlanet = (ImageView)findViewById(R.id.planetEffect);
+        Animation animSetRing = AnimationUtils.loadAnimation(this,R.anim.anim_set_ring);
+        effectPlanet.startAnimation(animSetRing);
     }
     protected void setStartUpWorldValues() {
         earth.setPlanetColonies(1);

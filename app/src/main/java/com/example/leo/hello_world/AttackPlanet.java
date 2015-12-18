@@ -58,6 +58,8 @@ public class AttackPlanet extends AppCompatActivity {
             }
         });
         ImageButton laserButton = (ImageButton)findViewById(R.id.laserButton);
+        Animation translateLaser = AnimationUtils.loadAnimation(this,R.anim.anim_trans_laser);
+        laserButton.startAnimation(translateLaser);
         laserButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

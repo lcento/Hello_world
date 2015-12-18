@@ -60,7 +60,11 @@
         android:layout_toRightOf="@+id/textView8" android:layout_alignStart="@+id/dataView7" android:layout_alignLeft="@+id/dataView7"
         android:layout_width="wrap_content" android:layout_height="wrap_content"
         android:text="@string/planet_forcefield_label" />
-    <ImageView android:id="@+id/imageEarth" android:src="@drawable/earth" android:background="@drawable/anim_forcefield"
-        android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="30dp"
+    <ImageView android:id="@+id/planetEffect" android:src="@drawable/anim_plasma_ring"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/textView8"
+        android:contentDescription="@string/content_desc_earth"/>
+    <ImageView android:id="@+id/imageEarth" android:src="@drawable/earth" android:background="#00000000"
+        android:padding="64dp" android:layout_marginLeft="1dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
         android:layout_below="@+id/textView8" android:contentDescription="@string/content_desc_earth"/>
 </RelativeLayout>

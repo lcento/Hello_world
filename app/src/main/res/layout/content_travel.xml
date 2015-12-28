@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFDDBB"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.leo.hello_world.TravelPlanet"
     tools:showIn="@layout/activity_travel">
     <VideoView android:id="@+id/travelVideoView"
+        android:layout_below="@+id/travelButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clickable="true"
-        android:longClickable="true"
         android:keepScreenOn="true"/>
-</FrameLayout>
+    <Button android:id="@+id/travelButton"
+        android:text="@string/travel_button_caption"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="#000000"
+        android:textColor="#FFDDBB"
+        android:textSize="28sp"
+        android:layout_margin="4dp"/>
+</RelativeLayout>

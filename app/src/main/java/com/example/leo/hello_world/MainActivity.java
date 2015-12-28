@@ -2,6 +2,7 @@ package com.example.leo.hello_world;
 
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -16,9 +17,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
     WorldGen earth = new WorldGen("Earth", 5973, 9.78);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setStartUpWorldValues();
         setStartUpScreenText();
         setStartUpScreenAnim();
+        setStartUpScreenAudio();
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -41,6 +41,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    private void setStartUpScreenAudio() {
+        MediaPlayer audioPlayer = MediaPlayer.create(getApplicationContext(), R.raw.ambient);
+        audioPlayer.setLooping(true);
+        audioPlayer.start();
+    }
+
     private void setStartUpScreenAnim() {
         //ImageView homePlanet = (ImageView)findViewById(R.id.imageEarth);
         //homePlanet.setBackgroundResource(R.drawable.anim_forcefield);

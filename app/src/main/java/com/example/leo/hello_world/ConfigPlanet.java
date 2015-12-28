@@ -1,6 +1,7 @@
 package com.example.leo.hello_world;
 
 import android.app.Activity;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -14,6 +15,7 @@ import android.widget.TextView;
  * Created by leo on 03/12/15.
  */
 public class ConfigPlanet extends AppCompatActivity {
+    private MediaPlayer clickPlayer = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +26,7 @@ public class ConfigPlanet extends AppCompatActivity {
 
         getSupportActionBar().setIcon(R.drawable.helloworldicon);
 
+        clickPlayer = MediaPlayer.create(getApplicationContext(), R.raw.click);
         EditText colonyText = (EditText)findViewById(R.id.editTextColonies);
         colonyText.setText("1", EditText.BufferType.EDITABLE);
         EditText colonistText = (EditText)findViewById(R.id.editTextColonists);
@@ -41,6 +44,7 @@ public class ConfigPlanet extends AppCompatActivity {
         colonyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                clickPlayer.start();
                 finish();
             }
         });
@@ -48,6 +52,7 @@ public class ConfigPlanet extends AppCompatActivity {
         colonistButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                clickPlayer.start();
                 finish();
             }
         });
@@ -55,6 +60,7 @@ public class ConfigPlanet extends AppCompatActivity {
         baseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                clickPlayer.start();
                 finish();
             }
         });
@@ -62,6 +68,7 @@ public class ConfigPlanet extends AppCompatActivity {
         militaryButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                clickPlayer.start();
                 finish();
             }
         });
@@ -69,6 +76,7 @@ public class ConfigPlanet extends AppCompatActivity {
         forceFieldOnButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                clickPlayer.start();
                 finish();
             }
         });
@@ -76,6 +84,7 @@ public class ConfigPlanet extends AppCompatActivity {
         forceFieldOffButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                clickPlayer.start();
                 finish();
             }
         });
@@ -83,6 +92,7 @@ public class ConfigPlanet extends AppCompatActivity {
         doneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                clickPlayer.start();
                 finish();
             }
         });

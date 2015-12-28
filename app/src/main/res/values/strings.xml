@@ -29,6 +29,7 @@
     <string name="button_name_done">Done Configuring</string>
     <string name="button_name_done_add">All Done!</string>
     <string name="button_name_return">Return Home</string>
+    <string name="travel_button_caption">Return to Home Planet</string>
 
     <string name="content_desc_bomb">Bomb the Planet</string>
     <string name="content_desc_invade">Invade the Planet</string>

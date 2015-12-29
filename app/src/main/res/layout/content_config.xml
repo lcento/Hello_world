@@ -10,7 +10,7 @@
     tools:context="com.example.leo.hello_world.ConfigPlanet"
     tools:showIn="@layout/activity_config">
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="170dp" android:layout_height="match_parent"
+        android:layout_width="190dp" android:layout_height="match_parent"
         android:orientation="vertical">
         <Button android:id="@+id/coloniesButton" android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:text="@string/button_name_colonies"
@@ -60,6 +60,9 @@
         <EditText android:id="@+id/editForcefieldOff" android:inputType="number" android:ems="12"
             android:layout_width="match_parent" android:layout_height="wrap_content"
             android:layout_marginTop="23dp" android:background="#FFFFFF" android:alpha="0.5"
-            android:gravity="center" android:textStyle="bold" android:typeface="sans"/>/>
+            android:gravity="center" android:textStyle="bold" android:typeface="sans"/>
+        <Button android:id="@+id/timeButton" android:text="@string/button_name_time"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="#FFFFFF" android:layout_marginTop="32dp" android:layout_marginLeft="-5dp"/>
     </LinearLayout>
 </LinearLayout>

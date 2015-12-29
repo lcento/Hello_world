@@ -35,6 +35,14 @@
             android:name="AttackPlanet"
             android:label="@string/activity_title_attack_planet"
             android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="TimePlanet"
+            android:label="@string/activity_title_time_planet"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <service
+            android:name="MusicService"
+            android:enabled="true"/>
+        <receiver android:name="AlarmReceiver"/>
     </application>
 
 </manifest>

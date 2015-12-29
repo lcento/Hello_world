@@ -1,9 +1,16 @@
 <resources>
     <string name="app_name">Hello_world - Home Screen</string>
+    <string name="time_caption_value">Home Planet Earth Time</string>
+    <string name="time_button_value">Return to Planet Configuration</string>
+    <string name="start_button_value">Start Music Service</string>
+    <string name="stop_button_value">Stop Music Service</string>
+    <string name="timer_hint_value">Enter Number of Seconds</string>
+    <string name="timer_button_value">Start Timer Countdown</string>
     <string name="activity_title_new_planet">Hello_world - Create a Planet</string>
     <string name="activity_title_config_planet">Hello_world - Configure a Planet</string>
     <string name="activity_title_travel_planet">Hello_world - Travel to Planet</string>
     <string name="activity_title_attack_planet">Hello_world - Attack a Planet</string>
+    <string name="activity_title_time_planet">Hello_world - Planet Earth Time</string>
 
     <string name="hello_world">Hello world!!</string>
     <string name="menu_add_planet">Add a New Planet</string>
@@ -29,6 +36,7 @@
     <string name="button_name_done">Done Configuring</string>
     <string name="button_name_done_add">All Done!</string>
     <string name="button_name_return">Return Home</string>
+    <string name="button_name_time">Atomic Clock</string>
     <string name="travel_button_caption">Return to Home Planet</string>
 
     <string name="content_desc_bomb">Bomb the Planet</string>

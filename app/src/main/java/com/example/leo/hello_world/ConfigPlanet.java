@@ -1,6 +1,7 @@
 package com.example.leo.hello_world;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -94,6 +95,13 @@ public class ConfigPlanet extends AppCompatActivity {
             public void onClick(View v) {
                 clickPlayer.start();
                 finish();
+            }
+        });
+        Button timeButton = (Button) findViewById(R.id.timeButton);
+        timeButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent callTimeIntent = new Intent(view.getContext(), TimePlanet.class);
+                startActivityForResult(callTimeIntent, 0);
             }
         });
     }

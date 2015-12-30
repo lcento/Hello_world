@@ -27,4 +27,9 @@
         android:orderInCategory="500"
         android:title="@string/menu_home_planet"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_contact"
+        android:orderInCategory="600"
+        android:title="@string/menu_alien_contact"
+        app:showAsAction="never" />
 </menu>

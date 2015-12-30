@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Hello_world - Home Screen</string>
+    <string name="find_alien_button_value">List Aliens in this Galaxy</string>
+    <string name="add_spock_button_value">Add Spock to my Alliance</string>
+    <string name="add_worf_button_value">Add Worf to my Alliance</string>
     <string name="time_caption_value">Home Planet Earth Time</string>
     <string name="time_button_value">Return to Planet Configuration</string>
     <string name="start_button_value">Start Music Service</string>
@@ -11,6 +14,7 @@
     <string name="activity_title_travel_planet">Hello_world - Travel to Planet</string>
     <string name="activity_title_attack_planet">Hello_world - Attack a Planet</string>
     <string name="activity_title_time_planet">Hello_world - Planet Earth Time</string>
+    <string name="activity_title_alien_contact">Hello World - Alien Contacts</string>
 
     <string name="hello_world">Hello world!!</string>
     <string name="menu_add_planet">Add a New Planet</string>
@@ -18,6 +22,7 @@
     <string name="menu_travel_planet">Travel to Planet</string>
     <string name="menu_attack_planet">Attack on Planet</string>
     <string name="menu_home_planet">Show Home Planet</string>
+    <string name="menu_alien_contact">Show Alien Contact</string>
     <string name="add_planet_caption">Click Planet to Add</string>
 
     <string name="content_desc_earth">Planet Earth</string>

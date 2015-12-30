@@ -51,6 +51,7 @@ public class AlienContact extends AppCompatActivity {
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //TODO
                 finish();
             }
         });
